@@ -1,0 +1,11 @@
+# ═══════════════════════════════════════════════════════════════
+# robots.txt for SPAN Studio
+# Architecture configured URL: https://spanstudio.in (Domain verification pending)
+# ═══════════════════════════════════════════════════════════════
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap index reference
+Sitemap: https://spanstudio.in/sitemap.xml
