@@ -19,9 +19,9 @@ test.describe('SPAN Studio Homepage Critical Flows', () => {
     await expect(headline).toContainText('TO');
     await expect(headline).toContainText('IGNORE');
 
-    const heroCta = hero.locator('a[href="/contact"]').first();
+    const heroCta = hero.locator('a[href="/#work"]').first();
     await expect(heroCta).toBeVisible();
-    await expect(heroCta).toContainText('START A PROJECT');
+    await expect(heroCta).toContainText('Explore Work');
   });
 
   test('navigation anchors scroll to target sections', async ({ page }) => {

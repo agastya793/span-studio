@@ -4,7 +4,7 @@ import React, { useRef } from 'react';
 import gsap from 'gsap';
 import { Button } from '@/components/ui/Button';
 import { ScrollIndicator } from '@/components/ui/ScrollIndicator';
-import { BUSINESS_INFO, getWhatsAppUrl } from '@/lib/constants';
+import { BUSINESS_INFO } from '@/lib/constants';
 import { useGSAP } from '@/hooks/useGSAP';
 import { DURATION, EASE } from '@/lib/animations';
 
@@ -120,15 +120,15 @@ export function HeroSection() {
             We turn complex manufacturing scale, machinery, and engineering capabilities into visually compelling business assets for global buyers, investors, and enterprise leadership.
           </p>
 
-          {/* CTA Group */}
+          {/* Exploratory CTA Group: Invite visitor to discover work & services */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 hero-cta mb-12 lg:mb-14">
             <Button
               variant="primary"
               size="lg"
-              href="/contact"
+              href="/#work"
               className="w-full sm:w-auto font-bold tracking-wider"
             >
-              {BUSINESS_INFO.primaryCtaLabel}
+              Explore Work
             </Button>
             <Button
               variant="secondary"
@@ -136,15 +136,7 @@ export function HeroSection() {
               href="/#services"
               className="w-full sm:w-auto"
             >
-              {BUSINESS_INFO.secondaryCtaLabel}
-            </Button>
-            <Button
-              variant="whatsapp"
-              size="lg"
-              href={getWhatsAppUrl()}
-              className="w-full sm:w-auto"
-            >
-              Direct WhatsApp Discussion →
+              View Services
             </Button>
           </div>
 
