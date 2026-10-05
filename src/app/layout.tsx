@@ -3,6 +3,7 @@ import './globals.css';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { ChatClientWrapper } from '@/components/chat/ChatClientWrapper';
+import { WhatsAppFloatingButton } from '@/components/ui/WhatsAppFloatingButton';
 import { SITE_CONFIG, getCanonicalUrl } from '@/lib/siteConfig';
 import { JsonLd, getStudioBusinessSchema } from '@/components/seo/JsonLd';
 import { Analytics } from '@vercel/analytics/react';
@@ -104,6 +105,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <ChatClientWrapper />
+        <WhatsAppFloatingButton />
 
         {/* Vercel Analytics & Speed Insights integration */}
         <Analytics />

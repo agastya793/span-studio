@@ -27,7 +27,7 @@ export function ChatLauncher() {
   }
 
   return (
-    <div className="fixed bottom-6 right-6 z-40">
+    <div className="fixed bottom-[70px] sm:bottom-[76px] right-5 sm:right-6 z-40">
       <button
         type="button"
         onClick={handleClick}
